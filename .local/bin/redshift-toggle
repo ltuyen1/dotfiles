@@ -1,0 +1,2 @@
+#!/bin/bash
+pgrep -f redshift &> /dev/null && killall redshift || redshift -l 0:0 -t 4500:4500 -r

@@ -1,0 +1,48 @@
+# Aeroplane i3status config
+# Original config by addy-dclxvi/i3-starterpack on GitHub
+# Modified by @ltuyen on GitLab.com
+
+general {
+	output_format = "i3bar"
+	colors = false
+	markup = pango
+	interval = 5
+}
+
+order += "ethernet eth0"
+order += "wireless wlan0"
+order += "cpu_temperature 0"
+order += "volume master"
+order += "time"
+
+cpu_temperature 0 {
+	format = "<span foreground='#e53935'> T:</span><span foreground='#ffffff'> %degrees°C</span>"
+	path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+# You might replace wlo1 with different WLAN interface
+# systemd-based distributions uses eno1 and wlo1 while the non-systemd uses eth0 and wlan0
+# Hint: Use "ip link" to find WLAN interface
+
+wireless wlan0 {
+	format_up = "<span foreground='#4caf50'> W:</span><span foreground='#ffffff'> %essid</span>"
+	format_down = "<span foreground='#e53935'> W:</span><span foreground='#ffffff'> Down</span>"
+}
+
+ethernet eth0 {
+	format_up = "<span foreground='#4caf50'> E:</span><span foreground='#ffffff'> Up</span>"
+	format_down = "<span foreground='#e53935'> E:</span><span foreground='#ffffff'> Down</span>"
+}
+
+volume master {
+	format = "<span foreground='#5b9bf8'> V:</span><span foreground='#ffffff'> %volume</span>"
+	format_muted = "<span foreground='#3c84f7'> V:</span><span foreground='#ffffff'> Muted</span>"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+time {
+	format = "<span background='#1f1f1f'> %a %d %b </span><span background='#66bb6a' foreground='#1f1f1f'> %I:%M %p </span>"
+}
+

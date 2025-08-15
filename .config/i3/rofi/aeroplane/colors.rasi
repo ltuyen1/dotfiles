@@ -1,0 +1,7 @@
+* {
+    text-color:  #000000;
+    background-color:  #fafafa;
+    selected: #9f9f9f;
+    altbg: #ffffff;
+    lightblack: #ffffff;
+}

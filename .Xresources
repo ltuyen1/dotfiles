@@ -1,0 +1,52 @@
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+st.font:         Iosevka Nerd Font:style:medium:pixelsize=20
+st.borderpx: 50
+st.alpha: 1
+
+!! TERMINAL COLOR SCHEME
+!! This should work in urxvt and "st" fork that supports Xresources
+!! Color scheme is based on "vinceliuice/Colloid-gtk-theme" on GitHub
+*.foreground:   #ffffff
+*.background:   #0f0f0f
+*.cursorColor:  #cccccc
+
+!*.foreground: #000000
+!*.background: #fafafa
+!*.cursorColor: #0f0f0f
+
+! black
+*.color0:       #080808
+*.color8:       #101010
+
+! red
+*.color1:       #e53935
+*.color9:       #f44336
+
+! green
+*.color2:       #4caf50
+*.color10:      #66bb6a
+
+! yellow
+*.color3:       #fbc02d
+*.color11:      #ffd600
+
+! blue
+*.color4:       #3c84f7
+*.color12:      #5b9bf8
+
+! magenta
+*.color5:       #ab48bc
+*.color13:      #ab47bc
+
+! cyan
+*.color6:       #009688
+*.color14:      #4db6ac
+
+! white
+*.color7:       #f2f2f2
+*.color15:      #fafafa

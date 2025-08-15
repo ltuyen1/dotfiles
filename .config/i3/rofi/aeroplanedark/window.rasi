@@ -1,0 +1,119 @@
+window {
+  height: 50%;
+  width: 35%;
+  background-color: @background-color;
+  border-color: #2f2f2f;
+  padding: 15px;
+  border: 3px;
+  location: southwest;
+  x-offset: 10px;
+  y-offset: -50px;
+}
+
+mainbox {
+  background-color: @background-color;
+  padding: 0px;
+  children: [ inputbar, listview ];
+}
+
+listview {
+    fixed-height: 0;
+    border:       0px 0px 0px ;
+    border-color: @text-color;
+    spacing:      2px ;
+    scrollbar:    true;
+    padding:      5px 0px 0px ;
+}
+
+element {
+    enabled: true;
+    spacing: 10px;
+    background-color:               transparent;
+    text-color:                     @text-color;
+    orientation:                    horizontal;
+    border-radius:                  0%;
+    padding:                        2% 1% 2% 1%;
+}
+
+element selected {
+    background-color:               @lightblack;
+    text-color:                     @text-color;
+    border: 2px;
+    border-color: @text-color;
+}
+
+element-icon {
+    size:                           22px;
+    border:                         0px;
+}
+
+element normal.normal {
+    background-color:            @altbg;
+    text-color:                  @text-color;
+}
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  @text-color;
+    border: 2px;
+    border-color: @text-color;
+}
+
+element.alternate.normal {
+    background-color:            @altbg;
+    text-color:                  @text-color;
+}
+
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: @text-color;
+    handle-width: 3px ;
+    padding:      0;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        "";
+    margin:     0px 0em 0em 0em ;
+    text-color: @normal-foreground;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @text-color;
+    background-color: @altbg;
+    padding:    15px ;
+    border: 2px;
+    border-color: @text-color;
+}
+
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+mode-switcher {
+    border:       0px 0px 0px ;
+    border-color: @text-color;
+}
+
+entry {
+    spacing:    0;
+    background-color: @altbg;
+    text-color: @text-color;
+}
+
+case-indicator {
+    spacing:    0;
+    text-color: @text-color;
+}
+
+prompt {
+    enabled: false;
+    spacing:    0;
+    padding: 0px;
+    text-color: @text-color;
+}
+
+textbox {
+  text-color: @text-color;
+}

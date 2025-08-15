@@ -1,0 +1,7 @@
+@import "colors.rasi"
+@import "window.rasi"
+
+configuration {
+    font: "Terminus (TTF) 15";
+    show-icons: false;
+}

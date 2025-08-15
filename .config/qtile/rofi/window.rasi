@@ -1,0 +1,109 @@
+window {
+  height: 50%;
+  width: 45%;
+  background-color: @background-color;
+  padding: 15px;
+  border: 0px;
+}
+
+mainbox {
+  background-color: @background-color;
+  padding: 0px;
+  children: [ inputbar, listview ];
+}
+
+listview {
+    fixed-height: 0;
+    border:       0px 0px 0px ;
+    border-color: @text-color;
+    spacing:      2px ;
+    scrollbar:    true;
+    padding:      0px 0px 0px ;
+}
+
+element {
+    enabled: true;
+    spacing: 10px;
+    background-color:               transparent;
+    text-color:                     @text-color;
+    orientation:                    horizontal;
+    border-radius:                  0%;
+    padding:                        1% 1% 1% 1%;
+}
+
+element selected {
+    background-color:               @lightblack;
+    text-color:                     @text-color;
+}
+
+element-icon {
+    size:                           22px;
+    border:                         0px;
+}
+
+element normal.normal {
+    background-color:            @altbg;
+    text-color:                  @text-color;
+}
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  @text-color;
+}
+
+element.alternate.normal {
+    background-color:            @altbg;
+    text-color:                  @text-color;
+}
+
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: @text-color;
+    handle-width: 3px ;
+    padding:      0;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        "";
+    margin:     0px 0em 0em 0em ;
+    text-color: @normal-foreground;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @text-color;
+    background-color: @altbg;
+    padding:    15px ;
+}
+
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+mode-switcher {
+    border:       0px 0px 0px ;
+    border-color: @text-color;
+}
+
+entry {
+    spacing:    0;
+    background-color: @altbg;
+    text-color: @text-color;
+}
+
+case-indicator {
+    spacing:    0;
+    text-color: @text-color;
+}
+
+prompt {
+    enabled: false;
+    spacing:    0;
+    padding: 0px;
+    text-color: @text-color;
+}
+
+textbox {
+  text-color: @text-color;
+}

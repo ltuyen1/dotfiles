@@ -1,0 +1,8 @@
+@import "colors.rasi"
+@import "window.rasi"
+
+configuration {
+    font: "Noto Sans 13";
+    show-icons: true;
+    icon: "Breeze Dark";
+}

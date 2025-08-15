@@ -1,0 +1,41 @@
+
+general {
+	output_format = "i3bar"
+	colors = false
+	markup = pango
+	interval = 5
+}
+
+order += "ethernet eth0"
+order += "wireless wlan0"
+order += "cpu_temperature 0"
+order += "volume master"
+order += "time"
+
+
+ethernet eth0 {
+	format_up = "<span foreground='#4caf50'> 󰈁  </span><span foreground='#f0f0f0'> Connected </span>"
+	format_down = "<span foreground='#e46c6d'> 󰈂  </span><span foreground='#f0f0f0'> Disconnected </span>"
+}
+
+wireless wlan0 {
+	format_up = "<span foreground='#4caf50'> 󰖩  </span><span foreground='#f0f0f0'> Up </span>"
+	format_down = "<span foreground='#e46c6d'> 󱚵  </span><span foreground='#f0f0f0'> Down </span>"
+}
+
+cpu_temperature 0 {
+	format = "<span foreground='#e46c6d'> 󰔏  </span><span foreground='#f0f0f0'> %degrees°C </span>"
+	path = "/sys/class/thermal/thermal_zone1/temp"
+}
+
+volume master {
+	format = "<span foreground='#b899a8'> 󰕾  </span><span foreground='#f0f0f0'> %volume </span>"
+	format_muted = "<span foreground='#b899a8'> 󰖁  </span><span foreground='#f0f0f0'> Muted </span>"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+time {
+	format = "<span foreground='#81a1c1'> 󰥔   </span><span foreground='#f0f0f0'>%a %I:%M %p </span>"
+}

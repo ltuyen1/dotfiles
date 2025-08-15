@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Aliases
+alias vi=nvim
+alias la="ls -la --color=auto"
+alias LS="ls --color=auto"
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias dir="ls --color=auto"
+alias df='df -h'               # human-readable sizes
+alias free='free -m -h'           # show sizes in MB
+alias grep='grep --color=auto' # colorize output (good for log files)
+alias psa="ps auxf"
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias psmem='ps auxf | sort -nr -k 4'
+alias pscpu='ps auxf | sort -nr -k 3'
+alias merge='xrdb -merge ~/.Xresources'
+alias cls='clear'
+alias add='git add'
+alias commit='git commit -m'
+alias push='git push'
+alias flatrun='flatpak run'
+alias flatinstall='flatpak install'
+alias flatlist='flatpak list'

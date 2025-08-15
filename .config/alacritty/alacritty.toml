@@ -1,0 +1,147 @@
+# Original config by Derek Taylor (@dwt1)
+# Modified by me!
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#1f1f1f"
+blue = "#5b9bf8"
+cyan = "#4db6ac"
+green = "#66bb6a"
+magenta = "#ab48bc"
+red = "#f44336"
+white = "#ffffff"
+yellow = "#ffd600"
+
+[colors.cursor]
+cursor = "#528bff"
+text = "CellBackground"
+
+[colors.normal]
+black = "#1f1f1f"
+blue = "#3c84f7"
+cyan = "#009688"
+green = "#4caf50"
+magenta = "#ab47bc"
+red = "#e53935"
+white = "#9f9f9f"
+yellow = "#fbc02d"
+
+[colors.primary]
+background = "#000000"
+foreground = "#fafafa"
+
+[colors.selection]
+background = "#4caf50"
+text = "CellForeground"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 16.0
+
+[font.offset]
+x = 0
+y = 2
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mode = "~Alt"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mode = "~Alt"
+mods = "Shift"
+
+[scrolling]
+history = 5000
+
+[window]
+dynamic_padding = false
+opacity = 1.0
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 40
+y = 40

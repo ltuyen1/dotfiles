@@ -1,0 +1,20 @@
+# more info on http://joewing.net/projects/jwm/config-2.3.html
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+export XIM_PROGRAM=/usr/bin/ibus-daemon
+
+#export GTK_IM_MODULE=fcitx5
+#export QT_IM_MODULE=fcitx5
+#export XMODIFIERS="@im=fcitx5"
+
+# /usr/bin/xset -dpms &
+# /usr/bin/xset s off &
+xrdb -merge .Xresources
+
+# Xinput and others
+xinput set-prop 9 "libinput Middle Emulation Enabled" 1
+xmodmap -e 'add mod3 = Scroll_Lock'
+xset r on
+xset b off
+xset r rate 250 25

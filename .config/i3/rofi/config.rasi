@@ -1,0 +1,7 @@
+@import "colors.rasi"
+@import "window.rasi"
+
+configuration {
+    font: "Iosevka Nerd Font 15";
+    show-icons: true;
+}
