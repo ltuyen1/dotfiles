@@ -1,9 +1,5 @@
 <img src="./assets/screenshot.png">
 
-# My personal configuration
-
-This is my current configuration on my computer!
-
 # Window managers
 
 There are current window manager in this config:
